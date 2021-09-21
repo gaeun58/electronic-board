@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <title>전광판</title>
     <style>
+        .container {
+          margin-top: 100px;
+          text-align: center;
+        }
+
+        .display {
+          margin-top: 70px;
+        }
+
+        button {
+          border: none;
+          border-radius: 10px;
+          padding: 10px 20px;
+          background-color: white;
+          color: white;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: cornflowerblue;
+          color: white;
+          font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="display">
-        <h2 id="text"></h2>
+    <div class="container">
+        <h2 id="intro">비밀 메세지를 찾아보세요!</h2>
+        <div class="display">
+            <h2 id="text"></h2>
+            <div class="button">
+                <button onclick="showAtOnce()">자동</button>
+                <button onclick="showOneByOne()">수동</button>
+            </div>
+        </div>
     </div>
-    <button onclick="showAtOnce()">자동</button>
-    <button onclick="showOneByOne()">수동</button>
 
     <script src="index.js"></script>
 </body>
