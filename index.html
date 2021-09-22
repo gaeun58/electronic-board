@@ -2,8 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>전광판</title>
+    <title>비밀메세지</title>
     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+         body {
+           font-family: 'Jua', sans-serif;
+         }
+
         .container {
           margin-top: 100px;
           text-align: center;
@@ -13,6 +18,11 @@
           margin-top: 70px;
         }
 
+        #text {
+          font-size: 30px;
+          color: blue;
+        }
+
         button {
           border: none;
           border-radius: 10px;
@@ -20,6 +30,7 @@
           background-color: white;
           color: white;
           cursor: pointer;
+          font-family: 'Jua', sans-serif;
         }
 
         button:hover {
@@ -35,8 +46,8 @@
         <div class="display">
             <h2 id="text"></h2>
             <div class="button">
-                <button onclick="showAtOnce()">자동</button>
-                <button onclick="showOneByOne()">수동</button>
+                <button onclick="showAtOnce()">한번에</button>
+                <button onclick="showOneByOne()">한 글자씩</button>
             </div>
         </div>
     </div>
